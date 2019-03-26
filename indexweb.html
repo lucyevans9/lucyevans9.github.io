@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .img {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+  img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  </style>
+</head>
+<body>
+
+<center><h2>Stay healthy</h2></center>
+<center><p>Here are some rules you need to remember:</p></center>
+
+<div class="row">
+  <div class="column">
+    <img src="clock.jpg" alt="Sleep" class=image1 style="width:100%">
+    <p>Sleep hygiene is the recommended behavioral and environmental practice
+      that is intended to promote better quality sleep. </p>
+      <ol>
+        <li>Lead a regular lifestyle</li>
+        <li>Get up at the same time</li>
+        <li>Avoid caffeine, nicotine, alcohol</li>
+        <li>Avoid naps during the day</li>
+        <li>Don’t try to force yourself to fall asleep </li>
+        <li>Limit your time spent in bed</li>
+        <li>Avoid strong light in the evening</li>
+        <li>Work out </li>
+      </ol>
+  </div>
+  <div class="column">
+    <img src="food.jpg" alt="Eating" class="image1" style="width:100%">
+    <p>Eat at least 5 portions of a variety of fruit and vegetables every day.
+      Avoid sugary sugary, fizzy drinks, alcoholic drinks, biscuits and cakes.
+      Drink 6-8 glasses of water every day</p>
+  </div>
+  <div class="column">
+    <img src="sport.jpg" alt="Exercising" style="width:100%">
+    <p>You should be active daily. If you lead a sedentary lifestyle,
+      do some physical exercise 5 days a week for at least 30 minutes.
+      Exercise helps prevent excess weight gain or help maintain weight loss.
+      Regular physical activity can improve your muscle strength and boost
+      your endurance. </p>
+  </div>
+</div>
+<div class="row">
+  <center><img src="healthy.jpg" alt="Health" style="width:50%"></center>
+</div>
+
+</body>
+</html>
