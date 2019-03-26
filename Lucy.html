@@ -6,24 +6,64 @@
           <link rel ="stylesheet" type="text/css" href="css/bootstrap.css">
           <script src="js/script.js"></script>
     <meta charset="utf-8">
-    <h1> Leeds Freshers Guide: Nights Out! </h1>
-  </head>
+    <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      border: 1px solid #e7e7e7;
+      background-color: #f3f3f3;
+    }
 
-  <body>
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: #666;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #ddd;
+    }
+
+    li a.active {
+      color: white;
+      background-color: #808080;
+    }
+    </style>
+    </head>
+    <body>
+
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./lauren.html">Day Trips</a></li>
+      <li><a class="active" href="./Lucy.html">Nightlife</a></li>
+      <li><a href="#about">Keeping Healthy</a></li>
+    </ul>
+
+<body>
+    <h1> Leeds Freshers Guide: Nights Out! </h1>
     <!-- Slideshow container -->
     <div class="slideshow-container">
 
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
       <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
         <div class="numbertext">1 / 3</div>
         <img src="Fruity.jpg" style="width:100%">
         <div> <h2> Leeds Uni Union: Fruity </h2> </div>
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
+
 
         <div>
            <div class="column"> Fruity is a classic Leeds night out - full of cheesy tunes and sing alongs, you're guaranteed a good night every time!</div>
@@ -37,12 +77,6 @@
         <img src="Mixtape.jpg" style="width:100%">
         <div> <h2> Hifi: Mixtape Project </h2> </div>
 
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
         <div>
           <div class="row">
              <div class="column">Mixtape Project is undoubtedly the best place to go for a good sing-along</div>
@@ -56,12 +90,6 @@
         <div class="numbertext">3 / 3</div>
         <img src="Good_Life.jpg" style="width:100%">
         <div> <h2> Beaverworks: Good Life </h2> </div>
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
 
         <div class="row">
           <div class="column">Good Life is a less regular event: happening about every 1 or 2 months, this party is worth the wait </div>
