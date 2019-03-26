@@ -31,7 +31,13 @@ ul {
      list-style: none;
      display: flex;
      text-align: center;
+     font-family: monospace;
 }
+
+ol {
+    font-family: monospace;
+}
+
 
 div {
       min-height: 50px;
